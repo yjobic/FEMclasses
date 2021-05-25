@@ -14,5 +14,24 @@ conda activate FEM
 
 ### Installing packages in the virtual env
 
-conda install -n FEM numpy matplotlib
+conda install -n FEM numpy matplotlib jupyter
 
+### Change jupyter default directory
+
+In an anaconda prompt (or terminal for Mac/Linux), type : 
+
+```
+jupyter notebook --generate-config
+```
+
+Edit the configuration file, search **c.NotebookApp.notebook_dir** and modify it, like :
+```
+c.NotebookApp.notebook_dir = 'F:/FEMclasses'
+```
+
+### Launch jupyter notebook
+
+In an anaconda prompt (or terminal for Mac/Linux), type : 
+```
+jupyter notebook
+```
